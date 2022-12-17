@@ -1,0 +1,97 @@
+/*Compoents*/
+.between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Create Flex Box*/
+.d-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+/*Create Padding + Margin*/
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
+    padding: 20px;
+}
+.pt-10 {
+    padding: 10px;
+}
+.pt-15 {
+    padding: 15px;
+}
+.pt-20 {
+    padding: 20px;
+}
+.m-0 {
+    margin: 0;
+}
+.m-15 {
+    margin: 15px;
+}
+.m-20 {
+    margin: 20px;
+}
+/*Colors*/
+.c-black {
+    color: #000000;
+}
+.c-navy {
+    color: #150050;
+}
+.c-purple {
+    color: #5800FF;
+}
+.c-pink {
+    color: #E900FF;
+}
+.bg-black {
+    background-color: #000000;
+}
+/*Postion*/
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+/*border + border radius*/
+.rad-6 {
+    -o-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+}
+.rad-10 {
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+.box-shadow {
+    box-shadow: 0 0 10px hsl(317 100% 54%);
+}
+/*Fonts*/
+.txt-c {
+    text-align: center;
+}
+.fs-14 {
+    font-size: 14;
+}
+/*width*/
+.w-full {
+    width: 100%;
+}
+/*Over Flow*/
+.overflow-h {
+    overflow: hidden;
+}
