@@ -193,7 +193,7 @@ img {
 }
 /*Style wrapper*/
 .wrapper {
-    grid-template-columns: repeat(auto-fill,minmax(400px,1f));
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
 }
 @media (max-width: 767px) {
     .wrapper {
@@ -201,7 +201,7 @@ img {
         gap: 10px;
     }
 }
-/*Welcome*/
+/*Welcome widget*/
 .welcome .intro img {
     width: 160px;
     margin-bottom: -10px;
@@ -235,3 +235,4 @@ img {
         margin-bottom: 15px;
     }
 }
+/*Quick Draft widget*/

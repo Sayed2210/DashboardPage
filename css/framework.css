@@ -4,6 +4,14 @@
     justify-content: space-between;
     align-items: center;
 }
+.btn-shape {
+    -o-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+    padding: 4px 10px;
+}
 /*Create Boxes*/
 .d-flex {
     display: flex;
@@ -126,6 +134,9 @@
 .bg-sky {
     background-color: #82C3EC;
 }
+.bg-purple-alt {
+    background-color: #52057B;
+}
 /*Postion*/
 .p-relative {
     position: relative;
@@ -150,6 +161,9 @@
 }
 .border-1 {
     border: 1px solid #E900FF;
+}
+.border-none {
+    border: none;
 }
 .box-shadow {
     box-shadow: 0 0 10px hsl(317 100% 54%);
