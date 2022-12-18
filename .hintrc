@@ -5,6 +5,16 @@
   "browserslist": [
     "defaults",
     "not ie 11",
-    "not ios_saf <= 14.8"
-  ]
+    "not ios_saf <= 14.8",
+    "not and_ff <= 106",
+    "not firefox <= 106"
+  ],
+  "hints": {
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ]
+  }
 }

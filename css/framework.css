@@ -4,12 +4,32 @@
     justify-content: space-between;
     align-items: center;
 }
-/*Create Flex Box*/
+/*Create Boxes*/
 .d-flex {
     display: flex;
 }
 .align-center {
     align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+.d-block {
+    display: block;
+}
+@media (max-width: 767px) {
+    .block-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
 }
 /*Create Padding + Margin*/
 .p-10 {
@@ -39,6 +59,48 @@
 .m-20 {
     margin: 20px;
 }
+.mt-0 {
+    margin-top: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-0 {
+    margin-left: 0;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.mr-0 {
+    margin-right: 0;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
 /*Colors*/
 .c-black {
     color: #000000;
@@ -49,11 +111,20 @@
 .c-purple {
     color: #5800FF;
 }
+.c-sky {
+    color: #82C3EC;
+}
 .c-pink {
     color: #E900FF;
 }
 .bg-black {
     background-color: #000000;
+}
+.bg-navy {
+    background-color: #150050;
+}
+.bg-sky {
+    background-color: #82C3EC;
 }
 /*Postion*/
 .p-relative {
@@ -77,6 +148,9 @@
     -ms-border-radius: 10px;
     border-radius: 10px;
 }
+.border-1 {
+    border: 1px solid #E900FF;
+}
 .box-shadow {
     box-shadow: 0 0 10px hsl(317 100% 54%);
 }
@@ -84,12 +158,20 @@
 .txt-c {
     text-align: center;
 }
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+}
 .fs-14 {
     font-size: 14;
 }
 /*width*/
 .w-full {
     width: 100%;
+}
+.w-fit {
+    width: fit-content;
 }
 /*Over Flow*/
 .overflow-h {
