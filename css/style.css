@@ -227,8 +227,15 @@ img {
     flex: 1;
 }
 .welcome a {
-    padding: 5px 10px;
     margin: 0 15px 20px auto;
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+}
+.welcome a:hover {
+    background-color: var(--purple-color-alt);
 }
 @media (max-width: 767px) {
     .welcome .text > div:not(:last-child) {
@@ -236,3 +243,19 @@ img {
     }
 }
 /*Quick Draft widget*/
+.quick-draft form textarea {
+    resize: none;
+    min-height: 180px;
+}
+.quick-draft .save {
+    margin-left: auto;
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.quick-draft .save:hover {
+    background-color: var(--purple-color-alt);
+}
