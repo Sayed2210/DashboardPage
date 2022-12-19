@@ -27,6 +27,7 @@
       {
         "input-button-name": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off"
   }
 }

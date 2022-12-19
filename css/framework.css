@@ -4,6 +4,11 @@
     justify-content: space-between;
     align-items: center;
 }
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn-shape {
     -o-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -119,11 +124,20 @@
 .c-purple {
     color: #5800FF;
 }
+.c-purple-alt {
+    color: #52057B;
+}
 .c-sky {
     color: #82C3EC;
 }
+.c-sky-alt {
+    color: #009EFF;
+}
 .c-pink {
     color: #E900FF;
+}
+.c-yellow {
+    color: #FFC600;
 }
 .bg-black {
     background-color: #000000;
@@ -136,6 +150,12 @@
 }
 .bg-purple-alt {
     background-color: #52057B;
+}
+.bg-purple {
+    background-color: #E900FF;
+}
+.bg-yellow {
+    background-color: #FFC600;
 }
 /*Postion*/
 .p-relative {
@@ -177,8 +197,14 @@
         text-align: center;
     }
 }
+.fs-13 {
+    font-size: 13px;
+}
 .fs-14 {
-    font-size: 14;
+    font-size: 14px;
+}
+.fw-bold {
+    font-weight: bold;
 }
 /*width*/
 .w-full {
