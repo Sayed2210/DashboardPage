@@ -325,3 +325,13 @@ img {
 .tickets .box {
     flex-basis: 45%;
 }
+/*Latest News*/
+.latest-news .news-row:not(:last-of-type) {
+    border-bottom: 1px solid var(--pink-color);
+}
+.latest-news .news-row img {
+    width: 100px;
+}
+.latest-news .news-row .info {
+    flex-grow: 1;
+}

@@ -154,10 +154,13 @@
 .bg-sky {
     background-color: #82C3EC;
 }
+.bg-purple {
+    background-color: #5800FF;
+}
 .bg-purple-alt {
     background-color: #52057B;
 }
-.bg-purple {
+.bg-pink {
     background-color: #E900FF;
 }
 .bg-yellow {
