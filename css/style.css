@@ -321,3 +321,7 @@ img {
 .team .progress {
     background-color: rgb(255 198 0 / 20%);
 }
+/*Tickets Widget*/
+.tickets .box {
+    flex-basis: 45%;
+}

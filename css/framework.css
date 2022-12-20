@@ -21,6 +21,9 @@
 .d-flex {
     display: flex;
 }
+.f-wrap {
+    flex-wrap: wrap;
+}
 .align-center {
     align-items: center;
 }
@@ -139,6 +142,9 @@
 .c-yellow {
     color: #FFC600;
 }
+.c-yellow-alt {
+    color: #daaa00;
+}
 .bg-black {
     background-color: #000000;
 }
@@ -202,6 +208,9 @@
 }
 .fs-14 {
     font-size: 14px;
+}
+.fs-25 {
+    font-size: 25px;
 }
 .fw-bold {
     font-weight: bold;
