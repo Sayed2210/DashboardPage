@@ -195,6 +195,7 @@ img {
 /*Style wrapper*/
 .wrapper {
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    margin-bottom: 20px;
 }
 @media (max-width: 767px) {
     .wrapper {
@@ -301,7 +302,7 @@ img {
     transform: translateX(-50%);
 }
 .year-traget .data .progress .money span::after {
-    border-top-color: var(--pink-color);
+    border-top-color: var(--purple-color);
 }
 .year-traget .data .progress .project span::after {
     border-top-color: var(--sky-color);
@@ -334,4 +335,35 @@ img {
 }
 .latest-news .news-row .info {
     flex-grow: 1;
+}
+@media (max-width: 767px) {
+    .latest-news .news-row {
+        flex-direction: column;
+    }
+    .latest-news .news-row img,
+    .latest-news .news-row .info {
+        margin-bottom: 5px;
+    }
+}
+/*Tasks*/
+.tasks .between-flex:not(:last-of-type) {
+    border-bottom: 1px solid var(--pink-color);
+    padding-bottom: 10px;
+}
+.tasks .done {
+    opacity: 0.3;
+}
+.tasks .done h3,
+.tasks .done p {
+    text-decoration: line-through;
+}
+.tasks .between-flex i {
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+}
+.tasks .between-flex i:hover {
+    color: #FFC600;
 }
