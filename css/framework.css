@@ -60,13 +60,13 @@
 .pt-10 {
     padding-top: 10px;
 }
-.pm-10 {
+.pb-10 {
     padding-bottom: 10px;
 }
 .pt-15 {
     padding-top: 15px;
 }
-.pm-15 {
+.pb-15 {
     padding-bottom: 15px;
 }
 .pt-20 {
@@ -89,6 +89,12 @@
 }
 .mt-10 {
     margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
 }
 .mb-0 {
     margin-bottom: 0;
@@ -199,6 +205,9 @@
 }
 .border-none {
     border: none;
+}
+.bb {
+    border-bottom: 1px solid var(--pink-color);
 }
 .box-shadow {
     box-shadow: 0 0 10px hsl(317 100% 54%);

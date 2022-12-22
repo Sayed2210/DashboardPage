@@ -55,6 +55,15 @@ img {
 .page .content {
     background-color: var(--black-color);
 }
+/*Animations*/
+@keyframes chang-color {
+    0% {
+        background-color: var(--pink-color);
+    }
+    90% {
+        background-color: var(--navy-color);
+    }
+}
 /*Style Side Bar*/
 .side-bar {
     width: 58px;
@@ -366,4 +375,48 @@ img {
 }
 .tasks .between-flex i:hover {
     color: #FFC600;
+    cursor: pointer;
+}
+/*Latest UPloads*/
+.latest-upload ul li img {
+    width: 40px;
+    height: 40px;
+}
+/*current Project*/
+.current-project ul::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 11px;
+    background-color: var(--pink-color);
+}
+.current-project ul li::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--navy-color);
+    border: 2px solid var(--navy-color);
+    outline: 2px solid var(--pink-color);
+    margin-right: 15px;
+    z-index: 10;
+}
+.current-project ul li.done::before {
+    background-color: var(--pink-color);
+}
+.current-project ul li.current::before {
+    -webkit-animation: chang-color 0.8s infinite alternate;
+    animation: chang-color 0.8s infinite alternate;
+}
+.current-project img {
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    opacity: 0.3;
 }
