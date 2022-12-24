@@ -75,6 +75,9 @@
 .pt-20 {
     padding-top: 20px;
 }
+.pb-20 {
+    padding-bottom: 20px;
+}
 .m-0 {
     margin: 0;
 }
@@ -141,6 +144,9 @@
 /*Colors*/
 .c-black {
     color: #000000;
+}
+.c-white {
+    color: white;
 }
 .c-navy {
     color: #150050;
@@ -255,6 +261,9 @@
 /*width*/
 .w-full {
     width: 100%;
+}
+.h-full {
+    height: 100%;
 }
 .w-fit {
     width: fit-content;
