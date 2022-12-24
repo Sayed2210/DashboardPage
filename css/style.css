@@ -418,5 +418,20 @@ img {
     right: 0;
     bottom: 0;
     width: 160px;
-    opacity: 0.3;
+    opacity: 0.1;
 }
+/*reminders*/
+.reminders .circle {
+    width: 15px;
+    height: 15px;
+}
+.reminders .purple {
+    border-left: 2px solid var(--purple-color);
+}
+.reminders .yellow {
+    border-left: 2px solid var(--yellow-color);
+}
+.reminders .sky {
+    border-left: 2px solid var(--sky-color);
+}
+
