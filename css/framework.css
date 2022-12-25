@@ -193,6 +193,9 @@
 .bg-yellow {
     background-color: #FFC600;
 }
+.bg-red {
+    background-color: #ff0000;
+}
 /*Postion*/
 .p-relative {
     position: relative;

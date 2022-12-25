@@ -54,6 +54,7 @@ img {
 }
 .page .content {
     background-color: var(--black-color);
+    overflow: hidden;
 }
 /*Animations*/
 @keyframes chang-color {
@@ -491,4 +492,50 @@ img {
 .social-media .linkedin i,
 .social-media .linkedin a {
     background-color: #0077b5;
+}
+/*Project Table*/
+.project-table .responsive-table {
+    overflow-x: auto;
+}
+.project-table table {
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.project-table thead td{
+    background-color: var(--purple-color);
+    border: 1px solid var(--pink-color);
+    color: white;
+    font-weight: bold;
+}
+.project-table table td{
+    padding: 15px;  
+}
+.project-table tbody td {
+    border-left: 1px solid var(--pink-color);
+    border-bottom: 1px solid var(--pink-color);
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+    color: white;
+}
+.project-table tbody tr td:last-child {
+    border-right: 1px solid var(--pink-color);
+}
+.project-table tbody tr:hover td{
+    background-color: var(--purple-color-alt);
+}
+.project-table tbody td img {
+    width: 32px;
+    height: 32px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #000000;
+}
+.project-table tbody td img:not(:first-child) {
+    margin-left: -20px;
 }
