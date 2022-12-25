@@ -1,4 +1,4 @@
-/*Global Variables*/
+/*Global Variables +components*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -49,12 +49,60 @@ img {
 :focus {
     outline: none;
 }
-.page {
-    min-height: 100vh;
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
 }
-.page .content {
-    background-color: var(--black-color);
-    overflow: hidden;
+.toggle-switch {
+    background-color: var(--purple-color-alt);
+    width: 78px;
+    height: 32px;
+    padding: 2px;
+    position: relative;
+    -o-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    border-radius: 16px;
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple-color);
+    color: white;
+    left: 4px;
+    top: 4px;
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--purple-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    background-color: var(--pink-color);
 }
 /*Animations*/
 @keyframes chang-color {
@@ -202,7 +250,15 @@ img {
     background-color: var(--purple-color);
     z-index: 10;
 }
+/*Dashboard content*/
 /*Style wrapper*/
+.page {
+    min-height: 100vh;
+}
+.page .content {
+    background-color: var(--black-color);
+    overflow: hidden;
+}
 .wrapper {
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     margin-bottom: 20px;
@@ -538,4 +594,13 @@ img {
 }
 .project-table tbody td img:not(:first-child) {
     margin-left: -20px;
+}
+/*Setting Page*/
+.setting-page {
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}
+/*Site control*/
+.site-control textarea {
+    resize: none;
+    min-height: 150px;
 }
