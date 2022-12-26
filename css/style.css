@@ -34,6 +34,9 @@ a {
 img {
     max-width: 100%;
 }
+::placeholder {
+    color: var(--pink-color);
+}
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -52,6 +55,7 @@ img {
 .toggle-checkbox {
     -webkit-appearance: none;
     appearance: none;
+    display: none;
 }
 .toggle-switch {
     background-color: var(--purple-color-alt);
@@ -603,4 +607,8 @@ img {
 .site-control textarea {
     resize: none;
     min-height: 150px;
+}
+/*general info*/
+.general-info > div > div {
+    flex: 1;
 }

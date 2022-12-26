@@ -88,7 +88,7 @@
             <h1 class="p-relative c-pink">Settings</h1>
             <div class="settings-page d-grid m-20">
                 <!--Create Site control Widget-->
-                <div class="site-control bg-navy p-20 rad-10">
+                <div class="site-control bg-navy p-20 rad-10 mb-20">
                     <h2 class="c-pink mb-20">Site control</h2>
                     <p class="c-purple mb-20">Control The Website If There Is Maintenance
                     </p>
@@ -104,8 +104,60 @@
                             </label>
                         </div>
                     </div>
-                    <textarea class="bg-purple w-full d-block p-20 rad-6" placeholder="Write Your Message Here"></textarea>
+                    <textarea class="bg-purple w-full d-block p-20 rad-6 border-none border-1" placeholder="Write Your Message Here"></textarea>
                 </div>
+                <!--Create general info widget-->
+                <div class="general-info bg-navy p-20 rad-10 mb-20">
+                    <h2 class="c-pink mb-20">General Info</h2>
+                    <p class="c-purple mb-20">General Information About Your Account
+                    </p>
+                    <label class="c-purple d-block mb-5" for="first">First Name</label>
+                    <input type="text" id="first" class="w-full p-10 bg-purple border-none rad-6 border-1 mb-15" placeholder="Enter Your First Name">
+                    <label class="c-purple d-block mb-5" for="Last">Last Name</label>
+                    <input type="text" id="Last" class="w-full p-10 bg-purple border-none rad-6 border-1 mb-15" placeholder="Enter Your Last Name">
+                    <div class="between-flex gap-20">
+                        <div>
+                            <label class="c-purple d-block mb-5" for="email">Email</label>
+                            <input type="email" id="email" class="w-full p-10 bg-purple border-none rad-6 border-1 mb-15 c-pink" 
+                            value="eh600039@gmail.com" disabled>
+                        </div>
+                        <a class="c-pink fs-16 fw-bold" href="#">Change</a>
+                    </div>
+                </div>
+                <!--Create Security Info-->
+                <div class="security-info bg-navy p-20 rad-10 mb-20">
+                    <h2 class="c-pink mb-20">Security Info</h2>
+                    <p class="c-purple mb-20">Security Information About Your Account
+                    </p>
+                    <div class="between-flex mb-15 bb p-10">
+                        <div>
+                            <span class="c-pink">Password</span>
+                            <p class="c-purple fs-13 mt-5">Last Changed On 25/10/2021</p>
+                        </div>
+                        <a class="bg-purple c-pink btn-shape" href="#">Change</a>
+                    </div>
+                    <div class="between-flex mb-15 bb p-10">
+                        <div>
+                            <span class="c-pink">Two-Factor Authentication</span>
+                            <p class="c-purple fs-13 mt-5">Enable/Disable The Feature
+                            </p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="between-flex mb-15 bb p-10">
+                        <div>
+                            <span class="c-pink">Devices</span>
+                            <p class="c-purple fs-13 mt-5">Check The Login Devices List
+                            </p>
+                        </div>
+                        <a class="bg-purple c-pink btn-shape" href="#">Devices</a>
+                    </div>
+                </div>    
             </div>            
         </div>
     </div>
