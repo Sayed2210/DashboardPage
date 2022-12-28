@@ -234,6 +234,9 @@
 .bb {
     border-bottom: 1px solid var(--pink-color);
 }
+.b-top {
+    border-top: 1px solid var(--pink-color);
+}
 .box-shadow {
     box-shadow: 0 0 10px hsl(317 100% 54%);
 }
