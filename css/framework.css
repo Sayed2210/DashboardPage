@@ -24,6 +24,9 @@
 .f-wrap {
     flex-wrap: wrap;
 }
+.end-flex {
+    justify-content: flex-end;
+}
 .align-center {
     align-items: center;
 }
