@@ -783,4 +783,69 @@ img {
     color: var(--pink-color);
 }
 /*Profile Page*/
-
+/*Overview widget*/
+@media (max-width: 767px) {
+    .profile-page .overview {
+        flex-direction: column;
+    }
+}
+.profile-page .overview .avatar-box {
+    width: 300px;
+}
+@media (min-width: 767px) {
+    .profile-page .overview .avatar-box {
+        border-right: 1px solid var(--pink-color);
+    }
+}
+.profile-page .overview .avatar-box > img {
+    width: 120px;
+    height: 120px;
+}
+.profile-page .overview .avatar-box .level {
+    height: 5px;
+    margin: auto;
+    width: 70%;
+}
+.profile-page .overview .avatar-box .level > span {
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.overview .info-box .box {
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--pink-color);
+}
+.overview .info-box .box > div {
+    min-width: 250px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+/*other Data section*/
+@media (max-width: 767px) {
+    .other-data {
+        flex-direction: column;
+    }
+}
+.other-data .activities {
+    flex: 1;
+}
+.activities .activity img {
+    height: 64px;
+    width: 64px;
+}
+.activities .activity .date {
+    margin-left: auto;
+    text-align: right;
+}
+@media (max-width: 767px) {
+    .activities .activity {
+        flex-direction: column;
+    }
+    .activities .activity img {
+        margin: 5px auto;
+    }
+    .activities .activity .date {
+        margin: 10px auto;
+        text-align: center;
+    }
+}
