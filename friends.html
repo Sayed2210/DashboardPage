@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--add normaliz css file to reset all elements-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font awesome library-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--My Framework-->
+    <link rel="stylesheet" href="css/framework.css">
+    <!--main css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,800&display=swap" rel="stylesheet">   
+    <title>Friends</title>
+</head>
+<body>
+    <!--main container-->
+    <div class="page d-flex">
+        <!--Create Side Bar-->
+        <div class="side-bar bg-black p-relative p-20">
+            <h3 class="p-relative txt-c mt-0 c-purple">Elsayed</h3>
+            <ul>
+                <li><a class="d-flex align-center fs-14 rad-6 p-10" href="index.html">
+                    <i class="fa-solid fa-chart-simple fa-fw c-pink"></i>
+                    <span class="c-purple">Dashborad</span>
+                </a></li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                      <i class="fa-solid fa-gear fa-fw c-pink"></i>
+                      <span class="c-purple fs-14">Settings</span>
+                    </a>
+                </li>
+                  <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                      <i class="fa-regular fa-user fa-fw c-pink"></i>
+                      <span class="c-purple">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                      <i class="fa-solid fa-diagram-project fa-fw c-pink"></i>
+                      <span class="c-purple">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                      <i class="fa-solid fa-graduation-cap fa-fw c-pink"></i>
+                      <span class="c-purple">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                      <i class="fa-regular fa-circle-user fa-fw c-pink"></i>
+                      <span class="c-purple">Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                      <i class="fa-regular fa-file fa-fw c-pink"></i>
+                      <span class="c-purple">Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                      <i class="fa-regular fa-credit-card fa-fw c-pink"></i>
+                      <span class="c-purple">Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--Create content-->
+        <div class="content w-full c-navy">
+          <!--Create Header-->
+          <div class="head bg-black p-15 between-flex overflow-h box-shadow">
+              <div class="search p-relative">
+                  <input class="p-10 rad-10" type="search" placeholder="Enter A keyWord">
+              </div>
+              <div class="icons d-flex align-center">
+                  <i class="fa-regular fa-bell fa-lg c-pink p-relative"></i>
+                  <img src="/img/avatar.png" alt="">
+              </div>
+          </div>
+          <h1 class="p-relative c-pink">Friends</h1>
+          <!--Create body-->
+          <div class="friends-page d-grid gap-20 m-20">
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-01.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Ahmed Ali</h4>
+                    <p class="c-purple">JS Developer</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/11/2023</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-02.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Abdo Elbalf</h4>
+                    <p class="c-purple">WordPress</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                    <span class="vip c-sky p-absolute fw-bold">VIP</span>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/4/2020</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-01.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Mahmuod Kahraba</h4>
+                    <p class="c-purple">Android</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                    <span class="vip c-sky p-absolute fw-bold">VIP</span>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/11/2020</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-03.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Mazen Ahmed</h4>
+                    <p class="c-purple">Back-End Developer</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                    <span class="vip c-sky p-absolute fw-bold">VIP</span>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/11/2023</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-04.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Ahmed Esam</h4>
+                    <p class="c-purple">Ui/UX Designer</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/8/2021</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-01.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Mohamed Walid</h4>
+                    <p class="c-purple">Front-End Developer</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/11/2023</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-02.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Omar Taha</h4>
+                    <p class="c-purple">Markting</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                    <span class="vip c-sky p-absolute fw-bold">VIP</span>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/11/2023</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-04.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Mohamed Ahmed</h4>
+                    <p class="c-purple">Full-Stack Developer</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/11/2023</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="friends bg-navy p-10 rad-6 p-relative">
+                <div class="contact p-absolute">
+                    <i class="fa-solid fa-phone c-pink bg-purple rad-half p-10 mr-5"></i>
+                    <i class="fa-solid fa-envelope c-pink bg-purple rad-half p-10"></i>
+                </div>
+                <div class="txt-c mb-5">
+                    <img src="/img/friend-03.jpg" class="w-100 h-100 rad-half mb-5 mt-5">
+                    <h4 class="c-pink mb-5">Ahmed Abdallah</h4>
+                    <p class="c-purple">NodeJs Developer</p>
+                </div>
+                <div class="icons bb b-top p-15 mt-10 mb-15 p-relative">
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-user-group mr-5"></i>
+                        <span>Friends</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-code mr-5"></i>
+                        <span>Projects</span>
+                    </div>
+                    <div class="mb-5 c-purple">
+                        <i class="fa-solid fa-newspaper mr-5"></i>
+                        <span>Article</span>
+                    </div>
+                    <span class="vip c-sky p-absolute fw-bold">VIP</span>
+                </div>
+                <div class="between-flex fs-13 p-10">
+                    <span class="c-purple">02/11/2023</span>
+                    <div>
+                        <a href="#" class="c-pink bg-purple btn-shape">Profile</a>
+                        <a href="#" class="c-white bg-red btn-shape">Remove</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
