@@ -118,6 +118,22 @@ img {
         background-color: var(--navy-color);
     }
 }
+@keyframes go-up {
+    0%, 100% {
+        -o-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -o-transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+}
+}
 /*Style Side Bar*/
 .side-bar {
     width: 58px;
@@ -136,8 +152,8 @@ img {
         margin-bottom: 50px;
         font-size: 1.2em;
     }
-    .side-bar > h3::before,
-    .side-bar > h3::after {
+.side-bar > h3::before,
+.side-bar > h3::after {
     content: '';
     position: absolute;
     background-color: var(--pink-color);
@@ -148,7 +164,7 @@ img {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-    .side-bar > h3::before {
+.side-bar > h3::before {
     width: 80px;
     height: 2px;
     bottom: -20px;
@@ -540,7 +556,7 @@ img {
 }
 .social-media .youtube {
     background-color: rgb(255 0 0 / 20%);
-  color: #ff0000;
+    color: #ff0000;
 }
 .social-media .youtube i,
 .social-media .youtube a {
@@ -1007,3 +1023,82 @@ img {
     font-size: 2.5rem;
     opacity: 0.3;
 }
+/*Files page */
+/*Files stats box*/
+.files-page {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+@media (max-width: 767px) {
+    .files-page {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+.files-page .files-stats {
+    min-width: 260px;
+}
+.files-page .files-stats .icons {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.files-page .files-stats .blue {
+    background-color: rgb(0 117 255 / 20%);
+  }
+  .files-page .files-stats .green {
+    background-color: rgb(255 198 0 / 20%);
+  }
+  .files-page .files-stats .red {
+    background-color: rgb(130 195 236 / 20%);
+  }
+  .files-page .files-stats .orange {
+    background-color: rgb(233 0 255 / 20%);
+  }
+.files-page .files-stats .size {
+    margin-left: auto;
+}
+.files-page .files-stats .upload {
+    margin: 5px auto;
+    padding: 10px 20px;
+}
+.files-page .files-stats .upload:hover {
+    background-color: var(--purple-color-alt);
+}
+.files-page .files-stats .upload:hover i {
+    -webkit-animation: go-up 0.8s infinite;
+    animation: go-up 0.8s infinite;
+}
+.files-page .files-content {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+.files-page .files-content .file-box i {
+    cursor: pointer;
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+}
+.files-page .files-content .file-box i:hover {
+    color: var(--purple-color);
+}
+.files-page .files-content .file-box > div img {
+    width: 64px;
+    height: 64px;
+    -o-transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    transition: var(--main-transition);
+}
+.files-page .files-content .file-box > div img:hover {
+    -o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+} 
+
+    
