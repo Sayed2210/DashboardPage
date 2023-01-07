@@ -1100,5 +1100,56 @@ img {
     -ms-transform: rotate(5deg);
     transform: rotate(5deg);
 } 
-
+/*Plans Page*/
+/*plan box*/
+.plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+  @media (max-width: 767px) {
+    .plans-page {
+      grid-template-columns: minmax(250px, 1fr);
+      margin-left: 10px;
+      margin-right: 10px;
+      gap: 10px;
+    }
+}
+.plans-page .plan .top {
+    border: 3px solid var(--navy-color);
+    outline: 2px solid transparent;
+}
+.plans-page .plan.pink  .top{
+    outline-color: var(--pink-color);
+}
+.plans-page .plan.sky  .top{
+    outline-color: var(--sky-color);
+}
+.plans-page .plan.yellow  .top{
+    outline-color: var(--yellow-color);
+}
+.plans-page .plan .top .price {
+    font-size: 2rem;
+    margin: auto;
+} 
+.plans-page .plan .top .price span {
+    font-size: 1.25rem;
+    top: 0;
+    left: -15px;
+}
+.plans-page .plan.pink ul li .yes {
+    color: var(--pink-color);
+}
+.plans-page .plan.sky ul li .yes {
+    color: var(--sky-color);
+}
+.plans-page .plan.yellow ul li .yes {
+    color: var(--yellow-color);
+}
+.plans-page .plan ul li i:not(.yes, .help) {
+    color: #ff0000;
+  }
+  .plans-page .plan ul li .help {
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--purple-color);
+  }
     
